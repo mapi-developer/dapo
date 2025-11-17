@@ -17,4 +17,4 @@ single_row = {
     "date": "2025-11-14",
     "price": 19.3,
     "discount": 0.0,
-    }
+}

@@ -1,12 +1,10 @@
-from .dapo.core.datakit import DataKit
+from dapo.core.datakit import DataKit
 import test_data as td
 
-dk = DataKit.from_rows(td.rows)
+dk_1 = DataKit.from_columns(td.columns)
 dk_2 = DataKit()
 
-print(dk_2)
+dk_3 = DataKit.from_csv("src/datasets/job_descriptions.csv")  # delimiter=None → auto-detect
 
-dk_2.add_row(td.single_row)
+print(dk_3.columns)
 
-for row in dk_2.iter_rows():
-    print(row)

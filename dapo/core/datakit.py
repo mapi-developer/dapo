@@ -1,6 +1,8 @@
 from __future__ import annotations
+
+import csv
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Sequence
+from typing import Any, Dict, List, Sequence, Iterator
 
 @dataclass
 class DataKit:
@@ -25,14 +27,15 @@ class DataKit:
         if not columns:
             return cls()
         
-        length = {len(col) for col in columns.values()}
-        if len(length) > 1:
+        lengths = {len(col) for col in columns.values()}
+        if len(lengths) > 1:
             raise ValueError("All columns must have the same length")
         
-        n_rows = length.pop()
-        data = {name: list(values) for name, values in columns.items()}
+        n_rows = lengths.pop()
         column_order = list(columns.keys())
-        return cls(_data=data, _columns=column_order, _n_rows=n_rows)
+        cols_data = [list(columns[name]) for name in column_order]
+
+        return cls(_data=cols_data, _columns=column_order, _n_rows=n_rows)
     
     @classmethod
     def from_rows(cls, rows: Sequence[Sequence[Any]]) -> "DataKit":
@@ -53,6 +56,27 @@ class DataKit:
 
         return cls(_columns=header, _data=cols_data, _n_rows=n_rows)
     
+    @classmethod
+    def from_csv(
+        cls,
+        path: str,
+        delimiter: str | None = None,
+        encoding: str = "utf-8",
+    ) -> "DataKit":
+        with open(path, newline="", encoding=encoding) as f:
+            if delimiter is None:
+                # read a sample to guess the delimiter
+                sample = f.read(4096)
+                f.seek(0)
+                dialect = csv.Sniffer().sniff(sample)
+                reader = csv.reader(f, dialect)
+            else:
+                reader = csv.reader(f, delimiter=delimiter)
+
+            rows = list(reader)
+
+        return cls.from_rows(rows)
+    
     @property
     def columns(self) -> List[str]:
         return self._columns
@@ -60,6 +84,16 @@ class DataKit:
     @property
     def n_cols(self) -> int:
         return len(self._columns)
+    
+    @property
+    def n_rows(self) -> int:
+        return self._n_rows
+    
+    def __len__(self) -> int:
+        return self._n_rows
+
+    def __repr__(self) -> str:
+        return f"DataKit(n_rows={self._n_rows}, n_cols={self.n_cols}, columns={self._columns})"
     
     # ACCESS
     def get_column(self, name: str) -> List[Any]:
@@ -70,7 +104,7 @@ class DataKit:
         self._check_row_index(index)
         return {name: self._data[i][index] for i, name in enumerate(self._columns)}
     
-    def iter_rows(self):
+    def iter_rows(self) -> "Iterator[Dict[str, Any]]":
         for i in range(self._n_rows):
             yield self.get_row(i)
 
@@ -87,3 +121,30 @@ class DataKit:
             self._data[i].append(values[name])
 
         self._n_rows += 1
+
+    def update_row(self, index: int, values: Dict[str, Any]) -> Dict[str, Any]:
+        self._check_row_index(index)
+
+        for name in values:
+            if name not in self._columns:
+                raise KeyError(f"Unknown column '{name}' in update")
+            
+        old_row = self.get_row(index)
+
+        for i, name in enumerate(self._columns):
+            if name in values:
+                self._data[i][index] = values[name]
+
+        return old_row
+
+    def delete_row(self, index: int) -> Dict[str, Any]:
+        self._check_row_index(index)
+
+        removed = {name: self._data[i][index] for i, name in enumerate(self._columns)}
+
+        for col in self._data:
+            col.pop(index)
+
+        self._n_rows -= 1
+        return removed
+    
