@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-import csv
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Sequence, Iterator
+from typing import Any, Dict, List, Optional, Sequence, Iterator
+
+from dapo.core.csv_utils import read_csv, write_csv
 
 @dataclass
 class DataKit:
@@ -60,22 +61,21 @@ class DataKit:
     def from_csv(
         cls,
         path: str,
-        delimiter: str | None = None,
+        delimiter: Optional[str] = None,
         encoding: str = "utf-8",
     ) -> "DataKit":
-        with open(path, newline="", encoding=encoding) as f:
-            if delimiter is None:
-                # read a sample to guess the delimiter
-                sample = f.read(4096)
-                f.seek(0)
-                dialect = csv.Sniffer().sniff(sample)
-                reader = csv.reader(f, dialect)
-            else:
-                reader = csv.reader(f, delimiter=delimiter)
+        data: List[List[Any]] = []
+        columns: List[str] = []
+        first = True
 
-            rows = list(reader)
+        for row_dict in read_csv(path, delimiter=delimiter, has_header=True, encoding=encoding):
+            if first:
+                columns = list(row_dict.keys())
+                first = False
+                data.append(columns)
+            data.append([row_dict[c] for c in columns])
 
-        return cls.from_rows(rows)
+        return cls.from_rows(data)
     
     @property
     def columns(self) -> List[str]:
@@ -148,3 +148,38 @@ class DataKit:
         self._n_rows -= 1
         return removed
     
+    def to_csv(
+        self,
+        path: str,
+        delimiter: str = ",",
+        encoding: str = "utf-8",
+        newline: str = "\n",
+    ) -> None:
+        n_cols = len(self._columns)
+
+        if n_cols == 0:
+            write_csv(path, [], [], delimiter=delimiter, encoding=encoding, newline=newline)
+            return
+
+        n_rows = len(self._data[0])
+
+        for idx, col in enumerate(self._data):
+            if len(col) != n_rows:
+                raise ValueError(
+                    f"Column {idx} ('{self._columns[idx]}') length {len(col)} "
+                    f"!= {n_rows} (length of first column)"
+                )
+
+        rows: List[List[object]] = []
+        for row_idx in range(n_rows):
+            row = [self._data[col_idx][row_idx] for col_idx in range(n_cols)]
+            rows.append(row)
+
+        write_csv(
+            path=path,
+            columns=self._columns,
+            rows=rows,
+            delimiter=delimiter,
+            encoding=encoding,
+            newline=newline,
+        )

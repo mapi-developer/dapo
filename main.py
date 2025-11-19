@@ -1,10 +1,10 @@
 from dapo.core.datakit import DataKit
 import test_data as td
 
-dk_1 = DataKit.from_columns(td.columns)
-dk_2 = DataKit()
+dk_1 = DataKit.from_csv("src/datasets/output.csv")
+dk_1.add_row(td.single_row)
+dk_1.to_csv("src/datasets/output.csv")
 
-dk_3 = DataKit.from_csv("src/datasets/job_descriptions.csv")  # delimiter=None → auto-detect
-
-print(dk_3.columns)
-
+# dk_2 = DataKit()
+# dk_2.add_row(td.single_row)
+# print(dk_2)
