@@ -3,11 +3,14 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Sequence, Iterator
 
+from dapo.core.data_column import DataColumn
+
 from dapo.core.csv_utils import read_csv, write_csv
+from dapo.core.json_utils import read_json, write_json
 
 @dataclass
 class DataKit:
-    _data: List[List[Any]] = field(default_factory=list)
+    _data: List[DataColumn[Any]] = field(default_factory=list)
     _columns: List[str] = field(default_factory=list)
     _n_rows: int = 0
 
@@ -15,13 +18,13 @@ class DataKit:
     def _check_row_index(self, index: int) -> None:
         if index < 0 or index >= self._n_rows:
             raise IndexError("Row index out of range")
-        
+
     def _col_pos(self, name: str) -> int:
         try:
             return self._columns.index(name)
         except ValueError:
             raise KeyError(f"Unknown column '{name}'") from None
-        
+
     # CONSTRUCTORS
     @classmethod
     def from_columns(cls, columns: Dict[str, Sequence[Any]]) -> "DataKit":
@@ -37,7 +40,7 @@ class DataKit:
         cols_data = [list(columns[name]) for name in column_order]
 
         return cls(_data=cols_data, _columns=column_order, _n_rows=n_rows)
-    
+
     @classmethod
     def from_rows(cls, rows: Sequence[Sequence[Any]]) -> "DataKit":
         if not rows:
@@ -45,7 +48,7 @@ class DataKit:
         
         header = [str(c) for c in rows[0]]
         n_cols = len(header)
-        cols_data: List[List[Any]] = [[] for _ in range(n_cols)]
+        cols_data: List[DataColumn[Any]] = [[] for _ in range(n_cols)]
         n_rows = 0
 
         for r in rows[1:]:
@@ -64,7 +67,7 @@ class DataKit:
         delimiter: Optional[str] = None,
         encoding: str = "utf-8",
     ) -> "DataKit":
-        data: List[List[Any]] = []
+        data: List[DataColumn[Any]] = []
         columns: List[str] = []
         first = True
 
@@ -77,6 +80,29 @@ class DataKit:
 
         return cls.from_rows(data)
     
+    @classmethod
+    def from_json(
+        cls,
+        path: str,
+        encoding: str = "utf-8",
+    ) -> "DataKit":
+        records = read_json(path, encoding=encoding)
+
+        if not records:
+            return cls(_data=[], _columns=[])
+
+        columns: List[str] = list(records[0].keys())
+
+        data: List[DataColumn[Any]] = [[] for _ in columns]
+        n_rows = 0
+
+        for rec in records:
+            for col_idx, col_name in enumerate(columns):
+                data[col_idx].append(rec.get(col_name))
+            n_rows += 1
+
+        return cls(_data=data, _columns=columns, _n_rows=n_rows)
+
     @property
     def columns(self) -> List[str]:
         return self._columns
@@ -96,16 +122,17 @@ class DataKit:
         return f"DataKit(n_rows={self._n_rows}, n_cols={self.n_cols}, columns={self._columns})"
     
     # ACCESS
-    def get_column(self, name: str) -> List[Any]:
+    def get_column(self, name: str) -> DataColumn[Any]:
         idx = self._col_pos(name)
-        return self._data[idx]
+        return DataColumn(self._data[idx])
     
     def get_row(self, index: int) -> Dict[str, Any]:
         self._check_row_index(index)
         return {name: self._data[i][index] for i, name in enumerate(self._columns)}
     
-    def iter_rows(self) -> "Iterator[Dict[str, Any]]":
-        for i in range(self._n_rows):
+    def iter_rows(self, max_amount: int | None = None) -> "Iterator[Dict[str, Any]]":
+        rows_range = max_amount if max_amount != None and max_amount < self._n_rows else self._n_rows
+        for i in range(rows_range):
             yield self.get_row(i)
 
     def add_row(self, values: Dict[str, Any]) -> None:
@@ -147,7 +174,7 @@ class DataKit:
 
         self._n_rows -= 1
         return removed
-    
+
     def to_csv(
         self,
         path: str,
@@ -183,3 +210,55 @@ class DataKit:
             encoding=encoding,
             newline=newline,
         )
+
+    def to_json(
+        self,
+        path: str,
+        encoding: str = "utf-8",
+        indent: int = 2,
+    ) -> None:
+        columns = self._columns
+        data = self._data
+
+        if not columns:
+            write_json(path, [], encoding=encoding, indent=indent)
+            return
+
+        n_cols = len(columns)
+        n_rows = len(data[0]) if n_cols > 0 else 0
+
+        for idx, col_vals in enumerate(data):
+            if len(col_vals) != n_rows:
+                raise ValueError(
+                    f"Column {idx} ('{columns[idx]}') length {len(col_vals)} "
+                    f"!= {n_rows} (length of first column)"
+                )
+
+        records: List[dict[str, Any]] = []
+        for row_idx in range(n_rows):
+            record = {
+                columns[col_idx]: data[col_idx][row_idx]
+                for col_idx in range(n_cols)
+            }
+            records.append(record)
+
+        write_json(
+            path=path,
+            records=records,
+            encoding=encoding,
+            indent=indent,
+        )
+
+    def sort(self, column: str, reverse: bool = False) -> None:
+        if self._n_rows == 0:
+            return
+
+        key_col = self.get_column(column)          # DataColumn
+        order = key_col.sort_order(reverse=reverse)
+
+        # apply this order to every column
+        for c_idx, col in enumerate(self._data):
+            reordered = [col[i] for i in order]
+            # mutate in-place to keep references valid
+            col.clear()
+            col.extend(reordered)
