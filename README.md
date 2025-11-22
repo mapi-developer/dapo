@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-- [Getting Started](#gettingstarted)
+- [Getting Started](#getting-started)
 - [Usage](#usage)
 
 ## Getting Started
