@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Sequence, Iterator
+from typing import Any, Dict, List, Optional, Sequence, Iterator, Callable
 
 from dapo.core.data_column import DataColumn
 
@@ -16,6 +16,10 @@ class DataKit:
     _n_rows: int = 0
 
     # HELPERS
+    def _validate_length(self, other: DataColumn[Any]) -> None:
+        if self._n_rows > 0 and self._n_rows != len(other):
+            raise ValueError(f"Column length mismatch: {len(self)} != {len(other)}")
+
     def _check_row_index(self, index: int) -> None:
         if index < 0 or index >= self._n_rows:
             raise IndexError("Row index out of range")
@@ -159,7 +163,7 @@ class DataKit:
         for i in range(rows_range):
             yield self.get_row(i)
 
-    def add_row(self, values: Dict[str, Any]) -> None:
+    def add_row(self, values: Dict[str, Any]) -> Dict[str, Any]:
         if not self._columns:
             self._columns = list(values.keys())
             self._data = [[] for _ in self._columns]
@@ -172,6 +176,18 @@ class DataKit:
             self._data[i].append(values[name])
 
         self._n_rows += 1
+        return values
+
+    def add_column(self, header: str, values: List[Any]) -> DataColumn[Any]:
+        self._validate_length(values)
+        data_column = DataColumn(values)
+        self._columns.append(header)
+        self._data.append(data_column)
+
+        if self._n_rows == 0:
+            self._n_rows = len(values)
+
+        return data_column
 
     def update_row(self, index: int, values: Dict[str, Any]) -> Dict[str, Any]:
         self._check_row_index(index)
@@ -304,7 +320,7 @@ class DataKit:
             indent=indent,
         )
 
-    def sort(self, column: str, reverse: bool = False) -> None:
+    def sort(self, column: str, reverse: bool = False) -> "DataKit":
         if self._n_rows == 0:
             return
 
@@ -317,3 +333,61 @@ class DataKit:
             # mutate in-place to keep references valid
             col.clear()
             col.extend(reordered)
+
+        return self
+
+    def filter(self, condition: Callable[[Dict[str, Any]], bool]) -> "DataKit":
+        header = self._columns
+        matched_data = [header]
+
+        for row_dict in self.iter_rows():
+            if condition(row_dict):
+                row_values = [row_dict[col] for col in header]
+                matched_data.append(row_values)
+
+        return self.from_rows(matched_data)
+    
+    def select(self, columns: List[str]) -> "DataKit":
+        selected_data = []
+        
+        for name in columns:
+            col_data = self.get_column(name)
+            selected_data.append(col_data)
+
+        return DataKit(
+            _data=selected_data,
+            _columns=columns,
+            _n_rows=self._n_rows
+        )
+    
+    def unique(self, column: str) -> "DataKit":
+        target_col_idx = self._col_pos(column)
+        
+        seen = set()
+        indices_to_keep = []
+
+        target_data = self._data[target_col_idx]
+        
+        for i in range(self._n_rows):
+            val = target_data[i]
+            if val not in seen:
+                seen.add(val)
+                indices_to_keep.append(i)
+
+        new_data = []
+        for col in self._data:
+            new_col_data = [col[i] for i in indices_to_keep]
+            new_data.append(new_col_data)
+
+        return DataKit(
+            _data=new_data, 
+            _columns=list(self._columns), 
+            _n_rows=len(indices_to_keep)
+        )
+    
+    def apply(self, func: Callable[[Any], Any], column: str) -> "DataKit":
+        idx = self._col_pos(column)
+        col_data = self._data[idx]
+        
+        for i in range(len(col_data)):
+            col_data[i] = func(col_data[i])

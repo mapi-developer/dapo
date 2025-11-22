@@ -30,6 +30,7 @@ Methods:
 .get_row(index: int)
 .iter_rows()
 .add_row(values: Dict[str, Any])
+.add_column(header: str, values: List[Any])
 .update_row(index: int, values: Dict[str, Any])
 .delete_row(index: int)
 .sort(column: str, reverse: bool = False)
@@ -41,3 +42,9 @@ DataColumn is a part of Datakit data. Represent table column of values.
 Methods:
 .sort(reverse: bool)
 .sort_order(reverse: bool)
+.sum(decimal_places: int, to_int: bool)
+.mean(decimal_places: int, to_int: bool)
+.median(decimal_places: int, to_int: bool)
+.min()
+.max()
+.std(decimal_places: int, to_int: bool)

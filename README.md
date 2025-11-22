@@ -44,6 +44,7 @@ data_kit.iter_rows() # Iterate rows
 
 ```python
 data_kit.add_row() # Add Row: Dict[str, Any] into DataKit
+data_kit.add_column() # Add Column into Datakit
 data_kit.update_row() # Update Row by index
 data_kit.delete_row() # Delete Row by index
 ```
