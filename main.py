@@ -3,13 +3,8 @@ import test_data as td
 
 datasets_src = "src/datasets"
 
-dk_1 = DataKit.from_json(f"{datasets_src}/jobs.json")
-# dk_1 = DataKit()
+dk_1 = DataKit.from_toon(f"{datasets_src}/data.toon")
+# dk_1 = DataKit.from_csv(f"{datasets_src}/job_descriptions_small.csv")
+# dk_1 = DataKit.from_columns(td.columns)
 
-col = dk_1.get_column("location").sort(reverse=True)
-
-# dk_1.to_csv(f"{datasets_src}/test.csv")
-
-# dk_2 = DataKit()
-# dk_2.add_row(td.single_row)
-# print(dk_2)
+dk_1.to_json(f"{datasets_src}/jobs.json")

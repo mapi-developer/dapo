@@ -7,6 +7,7 @@ from dapo.core.data_column import DataColumn
 
 from dapo.core.csv_utils import read_csv, write_csv
 from dapo.core.json_utils import read_json, write_json
+from dapo.core.toon_utils import read_toon, write_toon
 
 @dataclass
 class DataKit:
@@ -87,6 +88,29 @@ class DataKit:
         encoding: str = "utf-8",
     ) -> "DataKit":
         records = read_json(path, encoding=encoding)
+
+        if not records:
+            return cls(_data=[], _columns=[])
+
+        columns: List[str] = list(records[0].keys())
+
+        data: List[DataColumn[Any]] = [[] for _ in columns]
+        n_rows = 0
+
+        for rec in records:
+            for col_idx, col_name in enumerate(columns):
+                data[col_idx].append(rec.get(col_name))
+            n_rows += 1
+
+        return cls(_data=data, _columns=columns, _n_rows=n_rows)
+
+    @classmethod
+    def from_toon(
+        cls,
+        path: str,
+        encoding: str = "utf-8",
+    ) -> "DataKit":
+        records = read_toon(path, encoding=encoding)
 
         if not records:
             return cls(_data=[], _columns=[])
@@ -249,6 +273,37 @@ class DataKit:
             indent=indent,
         )
 
+    def to_toon(
+        self,
+        path: str,
+        encoding: str = "utf-8",
+        indent: int = 2,
+    ) -> None:
+        columns = self._columns
+        data = self._data
+
+        if not columns:
+            write_toon(path, [], encoding=encoding, indent=indent)
+            return
+
+        n_cols = len(columns)
+        n_rows = len(data[0]) if n_cols > 0 else 0
+
+        records: List[dict[str, Any]] = []
+        for row_idx in range(n_rows):
+            record = {
+                columns[col_idx]: data[col_idx][row_idx]
+                for col_idx in range(n_cols)
+            }
+            records.append(record)
+
+        write_toon(
+            path=path,
+            records=records,
+            encoding=encoding,
+            indent=indent,
+        )
+
     def sort(self, column: str, reverse: bool = False) -> None:
         if self._n_rows == 0:
             return
@@ -256,8 +311,8 @@ class DataKit:
         key_col = self.get_column(column)          # DataColumn
         order = key_col.sort_order(reverse=reverse)
 
-        # apply this order to every column
-        for c_idx, col in enumerate(self._data):
+        # apply this order to every column``
+        for _, col in enumerate(self._data):
             reordered = [col[i] for i in order]
             # mutate in-place to keep references valid
             col.clear()

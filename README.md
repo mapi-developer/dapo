@@ -19,6 +19,7 @@ from dapo import DataKit
 data_kit = DataKit() # Empty DataKit
 data_kit_csv = DataKit.from_csv(src) # DataKit from csv file
 data_kit_json = DataKit.from_json(src) # DataKit from json file
+data_kit_toon = DataKit.from_toon(src) # DataKit from toon
 ```
 
 **Write DataKit into File**
@@ -26,6 +27,7 @@ data_kit_json = DataKit.from_json(src) # DataKit from json file
 ```python
 data_kit.to_csv(src) # DataKit to csv file
 data_kit.to_json(src) # DataKit to json file
+data_kit.to_toon(src) # DataKit to toon file
 ```
 
 ## Usage
