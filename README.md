@@ -7,28 +7,44 @@
 ## Table of Contents
 
 - [Getting Started](#gettingstarted)
+- [Usage](#usage)
 
 ## Getting Started
 
 **Create DataKit**
 
-'''python
+```python
 from dapo import DataKit
 
 data_kit = DataKit() # Empty DataKit
 data_kit_csv = DataKit.from_csv(src) # DataKit from csv file
 data_kit_json = DataKit.from_json(src) # DataKit from json file
-'''
+```
 
 **Write DataKit into File**
 
-'''python
-from dapo import DataKit
-
-data_kit = DataKit()
+```python
 data_kit.to_csv(src) # DataKit to csv file
 data_kit.to_json(src) # DataKit to json file
-'''
+```
+
+## Usage
+
+**Get Data**
+
+```python
+data_kit.get_column() # Get DataColumn
+data_kit.get_row() # Get Row by index
+data_kit.iter_rows() # Iterate rows
+```
+
+**Change Data**
+
+```python
+data_kit.add_row() # Add Row: Dict[str, Any] into DataKit
+data_kit.update_row() # Update Row by index
+data_kit.delete_row() # Delete Row by index
+```
 
 ## License
 
