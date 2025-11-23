@@ -1,0 +1,35 @@
+name: Dapo Tests
+
+# Trigger the workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Run tests across multiple Python versions to ensure compatibility
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Install the package in editable mode so 'import dapo' works in tests
+        pip install -e .
+
+    - name: Run Tests
+      run: |
+        # Discovers and runs all tests in the 'tests/' directory
+        python -m unittest discover tests
