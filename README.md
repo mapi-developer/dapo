@@ -48,7 +48,7 @@ data_kit.delete_row() # Delete Row by index
 ```
 
 ## Documentation
-You can find the comprehensive documentation describing all methods and features [here](https://github.com/mapi-developer/dapo/blob/main/dapo/docs/Documentation.md).
+You can find the comprehensive documentation describing all methods and features [here](https://github.com/mapi-developer/dapo/blob/main/docs/Documentation.md).
 
 ## License
 [MIT](./LICENSE) License © 2025-PRESENT [Matvei Pisarev](https://github.com/mapi-developer)
