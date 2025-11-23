@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dapo"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Matvei Pisarev", email="matveypisarev.edu@gmail.com" },
 ]
