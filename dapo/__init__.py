@@ -1,4 +1,4 @@
-from .core.datakit import DataKit
-from .core.data_column import DataColumn
+from dapo.core.datakit import DataKit
+from dapo.core.data_column import DataColumn
 
 __all__ = ["DataKit", "DataColumn"]
