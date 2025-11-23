@@ -1,6 +1,6 @@
 import re
 from typing import Any, Dict, List
-from dapo.core.csv_utils import parse_csv_line, csv_escape
+from csv_utils import parse_csv_line, csv_escape
 
 def read_toon(path: str, encoding: str = "utf-8") -> List[Dict[str, Any]]:
     with open(path, "r", encoding=encoding) as f:

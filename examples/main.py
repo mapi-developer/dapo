@@ -1,5 +1,5 @@
-from dapo.core.datakit import DataKit
-import test_data as td
+from ..dapo.core.datakit import DataKit
+import tests.test_data as td
 
 datasets_src = "src/datasets"
 

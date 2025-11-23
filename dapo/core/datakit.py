@@ -3,11 +3,10 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Sequence, Iterator, Callable
 
-from dapo.core.data_column import DataColumn
-
-from dapo.core.csv_utils import read_csv, write_csv
-from dapo.core.json_utils import read_json, write_json
-from dapo.core.toon_utils import read_toon, write_toon
+from ..core.data_column import DataColumn
+from ..utils.csv_utils import read_csv, write_csv
+from ..utils.json_utils import read_json, write_json
+from ..utils.toon_utils import read_toon, write_toon 
 
 @dataclass
 class DataKit:
