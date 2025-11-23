@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: dapo
-Version: 0.1.1
+Version: 0.1.2
 Summary: Simple, zero-dependency tabular data manipulation and analysis for Python.
 Author-email: Matvei Pisarev <matveypisarev.edu@gmail.com>
 License: MIT License
@@ -86,7 +86,7 @@ data_kit.delete_row() # Delete Row by index
 ```
 
 ## Documentation
-You can find the comprehensive documentation describing all methods and features [here](https://github.com/mapi-developer/dapo/blob/main/dapo/docs/Documentation.md).
+You can find the comprehensive documentation describing all methods and features [here](https://github.com/mapi-developer/dapo/blob/main/docs/Documentation.md).
 
 ## License
 [MIT](./LICENSE) License © 2025-PRESENT [Matvei Pisarev](https://github.com/mapi-developer)
