@@ -320,20 +320,42 @@ class DataKit:
             indent=indent,
         )
 
-    def sort(self, column: str, reverse: bool = False) -> "DataKit":
-        if self._n_rows == 0:
+    def sort(
+        self, 
+        columns: str | List[str], 
+        reverse: bool | List[bool] = False
+    ) -> "DataKit":
+        if self._n_rows <= 1:
             return
 
-        key_col = self.get_column(column)          # DataColumn
-        order = key_col.sort_order(reverse=reverse)
+        if isinstance(columns, str):
+            columns = [columns]
+        
+        if isinstance(reverse, bool):
+            reverse = [reverse] * len(columns)
+            
+        if len(columns) != len(reverse):
+            raise ValueError("Length of 'columns' and 'reverse' must match")
 
-        # apply this order to every column``
-        for _, col in enumerate(self._data):
-            reordered = [col[i] for i in order]
-            # mutate in-place to keep references valid
-            col.clear()
-            col.extend(reordered)
+        indices = list(range(self._n_rows))
 
+        for col_name, is_reverse in zip(reversed(columns), reversed(reverse)):
+            col_idx = self._col_pos(col_name)
+            col_data = self._data[col_idx]
+            
+            indices.sort(key=lambda i: col_data[i], reverse=is_reverse)
+
+        for i, col in enumerate(self._data):
+            self._data[i] = [col[j] for j in indices]
+        
+        return self
+
+    def rename_column(self, old_name: str, new_name: str) -> "DataKit":
+        if new_name in self._columns:
+            raise ValueError(f"Column '{new_name}' already exists")
+            
+        idx = self._col_pos(old_name)
+        self._columns[idx] = new_name
         return self
 
     def filter(self, condition: Callable[[Dict[str, Any]], bool]) -> "DataKit":
@@ -391,3 +413,64 @@ class DataKit:
         
         for i in range(len(col_data)):
             col_data[i] = func(col_data[i])
+
+    def group_by(self, column: str, agg: Dict[str, str]) -> "DataKit":
+        group_col_idx = self._col_pos(column)
+        
+        groups: Dict[Any, List[int]] = {}
+        for i in range(self._n_rows):
+            key = self._data[group_col_idx][i]
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(i)
+
+        new_agg_names = []
+        for target_col, op in agg.items():
+            new_agg_names.append(f"{op}_{target_col}")
+
+        result_columns = [column] + new_agg_names
+        
+        result_data = [[] for _ in result_columns]
+        
+        for key, indices in groups.items():
+            result_data[0].append(key)
+            
+            for idx, (target_col, operation) in enumerate(agg.items()):
+                result_col_idx = idx + 1
+                
+                src_col_idx = self._col_pos(target_col)
+                values = [self._data[src_col_idx][i] for i in indices]
+                
+                if operation == "count":
+                    val = len(values)
+                elif operation == "sum":
+                    val = sum(values)
+                elif operation == "mean":
+                    val = sum(values) / len(values) if values else 0
+                elif operation == "max":
+                    val = max(values) if values else None
+                elif operation == "min":
+                    val = min(values) if values else None
+                else:
+                    raise ValueError(f"Unknown aggregation: {operation}")
+                
+                result_data[result_col_idx].append(val)
+
+        return DataKit(
+            _data=result_data, 
+            _columns=result_columns, 
+            _n_rows=len(groups)
+        )
+
+    def head(self, n: int = 5) -> "DataKit":
+        n = min(n, self._n_rows)
+        new_data = [col[:n] for col in self._data]
+        return DataKit(_data=new_data, _columns=list(self._columns), _n_rows=n)
+
+    def tail(self, n: int = 5) -> "DataKit":
+        if n <= 0:
+            return DataKit(_columns=list(self._columns))
+        
+        start = max(0, self._n_rows - n)
+        new_data = [col[start:] for col in self._data]
+        return DataKit(_data=new_data, _columns=list(self._columns), _n_rows=len(new_data[0]))
