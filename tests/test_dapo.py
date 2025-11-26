@@ -1,6 +1,4 @@
 import unittest
-import tempfile
-import os
 from dapo import DataKit
 from dapo.core.data_column import DataColumn
 
