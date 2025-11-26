@@ -1,4 +1,4 @@
-from typing import List, Iterable, Iterator, Dict, Optional
+from typing import List, Iterable, Iterator, Dict, Optional, Any
 
 CANDIDATE_DELIMITERS = [",", ";", "\t", "|", ":"]
 
@@ -75,12 +75,32 @@ def sniff_delimiter(path: str, max_lines: int = 20) -> str:
     with open(path, "r", encoding="utf-8") as f:
         return sniff_delimiter_from_lines(f, max_lines=max_lines)
 
+def _infer_type(value: str) -> Any:
+    if value == "":
+        return value
+        
+    # Check for booleans
+    if value.lower() == "true":
+        return True
+    if value.lower() == "false":
+        return False
+        
+    # Check for numbers
+    try:
+        if "." in value:
+            return float(value)
+        return int(value)
+    except (ValueError, TypeError):
+        pass
+        
+    return value
+
 def read_csv(
     path: str,
     delimiter: Optional[str] = None,
     has_header: bool = True,
     encoding: str = "utf-8",
-) -> Iterator[Dict[str, str]]:
+) -> Iterator[Dict[str, Any]]:
     if delimiter is None:
         delimiter = sniff_delimiter(path)
 
@@ -97,6 +117,8 @@ def read_csv(
             if has_header and header is None:
                 header = fields
                 continue
+
+            fields = [_infer_type(f) for f in fields]
 
             if has_header:
                 if len(fields) < len(header):
