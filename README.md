@@ -12,6 +12,14 @@
 
 ## Getting Started
 
+**Installation**
+
+You can install `Dapo` package via pip
+
+```bash
+pip install dapo
+```
+
 **Create DataKit**
 
 ```python

@@ -1,7 +1,7 @@
 from dapo import DataKit
-import example_data as td
+import datasets.example_data as td
 
-datasets_src = "src/datasets"
+datasets_src = "examples/datasets"
 
 dk_1 = DataKit.from_toon(f"{datasets_src}/jobs.toon")
 # dk_1 = DataKit()

@@ -37,6 +37,14 @@ A subclass of the standard Python `List`. It represents a single column of data 
 
 ## Getting Started
 
+**Installation**
+
+You can install `Dapo` package via pip
+
+```bash
+pip install dapo
+```
+
 ```python
 from dapo import DataKit
 
