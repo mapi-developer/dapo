@@ -1,0 +1,599 @@
+Job Id,Salary Range,AvgSalary,Country,Job Title
+398454096642776,$56K-$116K,86000.0,Turkmenistan,Web Developer
+481640072963533,$61K-$104K,82500.0,"Macao SAR, China",Operations Manager
+1292168246729889,$63K-$103K,83000.0,Cayman Islands,Teacher
+1498778686197107,$65K-$102K,83500.0,Sao Tome and Principe,UX/UI Designer
+1680293940995740,$65K-$102K,83500.0,Maldives,UX/UI Designer
+2696958764033354,$57K-$104K,80500.0,Bahrain,QA Analyst
+1446194141960546,$64K-$98K,81000.0,Bermuda,Litigation Attorney
+1914121205954296,$65K-$122K,93500.0,Jamaica,Mechanical Engineer
+2691974960988857,$65K-$100K,82500.0,Yemen,Brand Manager
+76902098772934,$55K-$117K,86000.0,French Polynesia,Social Media Coordinator
+235216486127884,$55K-$121K,88000.0,North Korea,Email Marketing Specialist
+407980927519454,$65K-$128K,96500.0,Democratic Republic Of Congo,HR Generalist
+940776147258900,$62K-$120K,91000.0,Azerbaijan,Legal Assistant
+1524311163188117,$64K-$98K,81000.0,Tuvalu,Nurse Practitioner
+2508133000944341,$58K-$116K,87000.0,Eritrea,Account Director
+2808730603865187,$62K-$124K,93000.0,Honduras,Software Engineer
+2277355440844434,$60K-$104K,82000.0,British Virgin Islands,Purchasing Agent
+2263070284964014,$58K-$107K,82500.0,Cuba,Purchasing Agent
+2425661201998142,$64K-$100K,82000.0,Gambia,Civil Engineer
+1355325262915901,$65K-$119K,92000.0,Paraguay,UI Developer
+419221709320780,$65K-$115K,90000.0,Chile,Event Planner
+619200804346093,$57K-$121K,89000.0,Nigeria,Psychologist
+1889088294438825,$62K-$130K,96000.0,Australia,Electrical Designer
+981851940397954,$58K-$129K,93500.0,New Caledonia,Data Analyst
+487916817418719,$64K-$103K,83500.0,West Bank and Gaza,UX/UI Designer
+1462699667162772,$56K-$109K,82500.0,Cote d'Ivoire,Account Executive
+2149248180059910,$55K-$121K,88000.0,Ecuador,Systems Administrator
+1191707058920608,$62K-$129K,95500.0,Virgin Islands (U.S.),Account Director
+1373513885523551,$56K-$109K,82500.0,Spain,Data Entry Clerk
+2828247805840851,$64K-$130K,97000.0,Belize,Registered Nurse
+61404752885199,$62K-$127K,94500.0,Cameroon,Speech Therapist
+972331080088144,$59K-$123K,91000.0,Republic Of Congo,Social Worker
+832490435008360,$59K-$114K,86500.0,Turks and Caicos Islands,Nurse Practitioner
+1932055874260837,$60K-$102K,81000.0,Monaco,Key Account Manager
+2904879381492355,$63K-$109K,86000.0,Armenia,UX Researcher
+2163073019325612,$57K-$125K,91000.0,Guam,Account Manager
+463604673095581,$65K-$117K,91000.0,Republic Of Congo,IT Support Specialist
+914610059336401,$61K-$111K,86000.0,Belize,Art Director
+401560922349533,$57K-$125K,91000.0,India,Account Executive
+2016798883546699,$65K-$121K,93000.0,Pakistan,Project Manager
+2905315612084623,$63K-$114K,88500.0,Dominica,Substance Abuse Counselor
+2853459439973158,$56K-$125K,90500.0,UK,Data Engineer
+1541299387735451,$56K-$128K,92000.0,San Marino,UX/UI Designer
+1421428131671046,$60K-$113K,86500.0,Morocco,Technical Writer
+2523262354777316,$63K-$102K,82500.0,St. Martin (French part),Key Account Manager
+433363914105835,$55K-$121K,88000.0,Brunei,Network Administrator
+708801148206853,$61K-$105K,83000.0,Saudi Arabia,Purchasing Agent
+448038582846953,$65K-$96K,80500.0,Nepal,UX/UI Designer
+3019745751207697,$63K-$104K,83500.0,Kyrgyz Republic,Environmental Consultant
+2932248483356055,$59K-$113K,86000.0,Sri Lanka,Electrical Engineer
+1101347351405871,$65K-$107K,86000.0,Mexico,Systems Engineer
+2402497415714130,$55K-$128K,91500.0,Guatemala,Electrical Designer
+2417807352752173,$58K-$115K,86500.0,Ecuador,Litigation Attorney
+1576493494098083,$60K-$113K,86500.0,Russia,Network Engineer
+3047887559567685,$64K-$103K,83500.0,Germany,Art Teacher
+340716003792218,$61K-$106K,83500.0,Suriname,Teacher
+823741303746808,$55K-$126K,90500.0,Mauritius,Inventory Analyst
+1081408808790672,$58K-$121K,89500.0,Mali,Legal Counsel
+929230808515445,$59K-$108K,83500.0,Belgium,Procurement Specialist
+1156025606824277,$55K-$118K,86500.0,Indonesia,Nurse Practitioner
+2141342207224203,$62K-$129K,95500.0,Fiji,Account Executive
+481690518473663,$64K-$113K,88500.0,Rwanda,Procurement Specialist
+2310106656757315,$59K-$105K,82000.0,South Sudan,Digital Marketing Specialist
+2564411558603354,$61K-$116K,88500.0,Lao PDR,Event Planner
+593640137699935,$60K-$112K,86000.0,Japan,Technical Writer
+2086213551673449,$61K-$122K,91500.0,Maldives,Content Writer
+736772465708102,$65K-$107K,86000.0,Bolivia,HR Coordinator
+183423976975680,$65K-$113K,89000.0,Gambia,Business Development Manager
+2486345121644216,$64K-$124K,94000.0,Philippines,Sales Manager
+1868744090564217,$63K-$130K,96500.0,Luxembourg,Speech Therapist
+2447681687654738,$55K-$127K,91000.0,Ecuador,Data Engineer
+2782181833230607,$63K-$113K,88000.0,St. Lucia,Database Developer
+1846193207686983,$56K-$129K,92500.0,Paraguay,Supply Chain Manager
+2477399506391243,$60K-$107K,83500.0,Cabo Verde,Wedding Planner
+1113406716985615,$60K-$124K,92000.0,North Korea,IT Support Specialist
+2331576770717246,$62K-$102K,82000.0,Brunei,Family Nurse Practitioner
+1459743010192052,$58K-$125K,91500.0,Norway,Front-End Engineer
+1648324436294184,$55K-$111K,83000.0,Oman,Customer Success Manager
+896725996951537,$59K-$113K,86000.0,Lesotho,Procurement Coordinator
+1818505779836863,$57K-$104K,80500.0,Mali,Urban Planner
+837996888924170,$65K-$107K,86000.0,South Africa,Account Executive
+1291920446633595,$57K-$122K,89500.0,Denmark,Speech Therapist
+2654597169216546,$56K-$128K,92000.0,Kuwait,HR Coordinator
+2099928773598710,$56K-$126K,91000.0,Latvia,Email Marketing Specialist
+2894688809840,$61K-$116K,88500.0,South Sudan,Environmental Engineer
+1765690327734607,$58K-$129K,93500.0,Brazil,Network Administrator
+2044345326334646,$60K-$108K,84000.0,Turks and Caicos Islands,Structural Engineer
+669590234567109,$63K-$106K,84500.0,Indonesia,Market Research Analyst
+2700890408290135,$61K-$107K,84000.0,Rwanda,Landscape Architect
+1254555934457610,$63K-$127K,95000.0,Tuvalu,Business Analyst
+4495150416542,$61K-$125K,93000.0,"Hong Kong SAR, China",UX/UI Designer
+309262081759453,$56K-$126K,91000.0,Czech Republic,Social Media Manager
+1724921779956441,$63K-$101K,82000.0,Slovak Republic,Front-End Engineer
+579575048679091,$59K-$117K,88000.0,USA,Network Engineer
+2149397187330318,$58K-$128K,93000.0,Fiji,Data Analyst
+1385010604943968,$62K-$123K,92500.0,St. Lucia,Registered Nurse
+2923831611027232,$59K-$112K,85500.0,Uganda,Family Lawyer
+2699711312301959,$59K-$123K,91000.0,Madagascar,Legal Assistant
+939684600508925,$65K-$120K,92500.0,Bermuda,Brand Manager
+1896547508467197,$60K-$114K,87000.0,Czech Republic,Chemical Analyst
+114645271112371,$65K-$105K,85000.0,Moldova,Data Analyst
+3075016445480296,$65K-$98K,81500.0,Jordan,Electrical Engineer
+386016382288061,$56K-$114K,85000.0,Equatorial Guinea,Customer Support Specialist
+2216368516992845,$59K-$109K,84000.0,Mali,Interior Designer
+275877193593940,$56K-$106K,81000.0,Liberia,Substance Abuse Counselor
+2276733529605345,$59K-$120K,89500.0,Fiji,Software Architect
+1032072454406029,$56K-$113K,84500.0,UK,Purchasing Agent
+2783507015640218,$59K-$115K,87000.0,Honduras,Software Developer
+1053345514869033,$60K-$125K,92500.0,"Macao SAR, China",Nurse Manager
+58801832589647,$65K-$107K,86000.0,Isle of Man,Veterinarian
+1862357558611811,$62K-$126K,94000.0,Lesotho,Process Engineer
+656921276403070,$62K-$117K,89500.0,Madagascar,Research Analyst
+956184901522839,$56K-$117K,86500.0,Comoros,Quality Assurance Analyst
+2277637152301006,$55K-$129K,92000.0,Indonesia,Supply Chain Analyst
+1940904259715887,$61K-$108K,84500.0,Bahrain,Project Manager
+2588584317894073,$64K-$130K,97000.0,Trinidad and Tobago,Operations Manager
+1360070138781167,$65K-$101K,83000.0,Libya,Account Manager
+2186900534995749,$63K-$120K,91500.0,St. Lucia,Web Developer
+160399666386920,$63K-$100K,81500.0,Sao Tome and Principe,Legal Assistant
+96764880618602,$57K-$118K,87500.0,Russia,UX/UI Designer
+2435037980247622,$56K-$109K,82500.0,"Iran, Islamic Rep.",Sales Representative
+2493341780464709,$61K-$112K,86500.0,Kuwait,Legal Assistant
+2427096294014030,$61K-$109K,85000.0,Singapore,Architect
+3084483244796070,$57K-$110K,83500.0,Latvia,Systems Administrator
+1487187719810876,$57K-$122K,89500.0,Palau,Pharmaceutical Sales Representative
+1714334287335132,$59K-$105K,82000.0,Lesotho,IT Support Specialist
+65641569762684,$60K-$109K,84500.0,Gibraltar,Teacher
+2536734206867634,$56K-$122K,89000.0,Gibraltar,Systems Administrator
+2440179520384781,$57K-$125K,91000.0,Seychelles,HR Coordinator
+1352724567331229,$62K-$100K,81000.0,Dominican Republic,Quality Assurance Analyst
+1801490479475084,$64K-$115K,89500.0,Hungary,Data Entry Clerk
+2855661563833731,$61K-$115K,88000.0,Syrian Arab Republic,Veterinarian
+2554197658030784,$62K-$111K,86500.0,Mauritius,Investment Banker
+1095385721568166,$65K-$101K,83000.0,Azerbaijan,Operations Manager
+2211807198608750,$55K-$119K,87000.0,Cyprus,Sales Manager
+1296141719608926,$59K-$115K,87000.0,Mauritius,Front-End Developer
+24991937651087,$60K-$129K,94500.0,France,Project Manager
+1225535036606351,$56K-$116K,86000.0,Timor-Leste,Java Developer
+955448019329178,$56K-$110K,83000.0,Bahrain,Executive Assistant
+363944948234256,$59K-$125K,92000.0,Solomon Islands,HR Manager
+145399585862144,$65K-$102K,83500.0,Ireland,Software Tester
+1016516744724168,$57K-$111K,84000.0,Seychelles,Litigation Attorney
+2646750127749830,$63K-$102K,82500.0,Maldives,Architectural Designer
+2167611398642460,$60K-$114K,87000.0,Armenia,Veterinarian
+2033306983577669,$56K-$127K,91500.0,Libya,Marketing Manager
+642334182333917,$63K-$105K,84000.0,Central African Republic,Procurement Specialist
+22580607012829,$61K-$119K,90000.0,Jordan,UX/UI Designer
+422676275009558,$56K-$107K,81500.0,Syrian Arab Republic,Network Administrator
+3081370537771102,$56K-$116K,86000.0,Kyrgyz Republic,Customer Support Specialist
+957305128807569,$55K-$106K,80500.0,Norway,Investment Banker
+2595804572467199,$62K-$102K,82000.0,Colombia,Human Resources Manager
+3057196015811336,$62K-$121K,91500.0,Syrian Arab Republic,Art Teacher
+2075190948218940,$55K-$119K,87000.0,Bermuda,Public Relations Specialist
+603290390078566,$59K-$119K,89000.0,Thailand,Research Analyst
+77668965448113,$56K-$116K,86000.0,American Samoa,Environmental Consultant
+2106006937289114,$63K-$111K,87000.0,Bermuda,Investment Advisor
+2226546247912088,$64K-$100K,82000.0,Timor-Leste,Financial Analyst
+1087659901403397,$64K-$103K,83500.0,Myanmar,Procurement Specialist
+1384735006315381,$60K-$105K,82500.0,Panama,Speech Therapist
+1596553017574397,$65K-$119K,92000.0,St. Vincent and the Grenadines,Digital Marketing Specialist
+307873899927146,$60K-$104K,82000.0,Bermuda,Operations Manager
+1317577784131285,$55K-$111K,83000.0,Burkina Faso,Marketing Analyst
+511793046721698,$56K-$106K,81000.0,Faroe Islands,Financial Controller
+2174489695396909,$63K-$101K,82000.0,Greenland,Sales Consultant
+2482944066971281,$59K-$104K,81500.0,France,Digital Marketing Specialist
+1277230346836850,$60K-$109K,84500.0,Guam,Registered Nurse
+64698191433317,$65K-$129K,97000.0,Bosnia and Herzegovina,Electrical Designer
+270402783784246,$55K-$115K,85000.0,Kazakhstan,Paralegal
+507092565645323,$63K-$127K,95000.0,Paraguay,Art Teacher
+1689832095250872,$59K-$121K,90000.0,Nicaragua,Purchasing Agent
+288941837754490,$57K-$117K,87000.0,USA,Landscape Architect
+2023971849029141,$58K-$121K,89500.0,Liechtenstein,Mechanical Engineer
+2766046917871089,$55K-$121K,88000.0,Cambodia,Landscape Designer
+884852662117570,$55K-$113K,84000.0,Kyrgyz Republic,UI Developer
+2421443788616217,$56K-$106K,81000.0,Switzerland,Digital Marketing Specialist
+188217896672379,$65K-$99K,82000.0,Singapore,Customer Support Specialist
+1345454711398268,$64K-$120K,92000.0,Argentina,Occupational Therapist
+2974277816309412,$57K-$124K,90500.0,Slovak Republic,Investment Analyst
+72800592741100,$58K-$110K,84000.0,Bahrain,Art Director
+2912686024304965,$61K-$114K,87500.0,South Africa,HR Manager
+222638050209965,$59K-$102K,80500.0,Barbados,Social Worker
+1689481939631362,$63K-$109K,86000.0,Tanzania,Customer Success Manager
+273337118353274,$64K-$130K,97000.0,Cote d'Ivoire,Customer Support Specialist
+577211763504566,$55K-$107K,81000.0,Fiji,Legal Advisor
+3096609007532611,$55K-$108K,81500.0,India,Civil Engineer
+773347391625286,$64K-$111K,87500.0,Israel,Office Manager
+1198963877133764,$57K-$126K,91500.0,Bhutan,SEO Specialist
+2497732438691862,$61K-$130K,95500.0,"Hong Kong SAR, China",Event Coordinator
+2648155458436246,$65K-$106K,85500.0,UK,Customer Success Manager
+3020706461775166,$62K-$110K,86000.0,Zimbabwe,Software Engineer
+2144388533438792,$56K-$116K,86000.0,Moldova,Event Planner
+1853604249162653,$61K-$123K,92000.0,Cambodia,Software Tester
+739866129797842,$59K-$120K,89500.0,Jordan,Procurement Manager
+2049393161746282,$64K-$107K,85500.0,Djibouti,Executive Assistant
+694680915572880,$62K-$112K,87000.0,Kazakhstan,Brand Manager
+1262797495134226,$61K-$109K,85000.0,Egypt,Research Analyst
+57981670145803,$61K-$103K,82000.0,Greenland,HR Coordinator
+306016090911435,$59K-$102K,80500.0,St. Kitts and Nevis,Network Engineer
+966650422072366,$56K-$108K,82000.0,St. Vincent and the Grenadines,IT Manager
+1981730295243808,$64K-$126K,95000.0,Indonesia,Executive Assistant
+166795681428216,$60K-$123K,91500.0,Nigeria,Public Relations Specialist
+3065354387066140,$57K-$115K,86000.0,Sudan,Copywriter
+1894521185840048,$62K-$111K,86500.0,Maldives,Marketing Manager
+1140429647542292,$55K-$111K,83000.0,Guam,Data Scientist
+2459929470645310,$63K-$117K,90000.0,New Zealand,Architect
+1610592842191022,$58K-$121K,89500.0,Sierra Leone,Software Engineer
+1539263063347944,$57K-$110K,83500.0,Guinea-Bissau,SEO Specialist
+929753245534249,$57K-$126K,91500.0,UAE,Customer Service Representative
+691709241515804,$61K-$114K,87500.0,Norway,UX/UI Designer
+1712019798732299,$57K-$110K,83500.0,Saudi Arabia,Financial Advisor
+1096712901596326,$59K-$103K,81000.0,San Marino,Art Teacher
+3009534177258410,$61K-$108K,84500.0,Mauritius,Data Engineer
+2647621495658127,$63K-$109K,86000.0,Sao Tome and Principe,Personal Assistant
+1442980337121238,$64K-$116K,90000.0,Maldives,HR Coordinator
+2061641739444640,$58K-$129K,93500.0,Uruguay,Technical Writer
+2096327049603757,$55K-$119K,87000.0,Australia,Market Research Analyst
+1377475145823410,$56K-$112K,84000.0,Papua New Guinea,UX/UI Designer
+994078073403295,$62K-$113K,87500.0,St. Kitts and Nevis,Landscape Architect
+1225855546859616,$61K-$126K,93500.0,Cuba,Landscape Architect
+2639193524622832,$63K-$118K,90500.0,Isle of Man,Market Research Analyst
+2859403459988288,$60K-$125K,92500.0,Comoros,SEO Analyst
+63130933296968,$55K-$115K,85000.0,Suriname,Financial Controller
+3038257032555306,$64K-$110K,87000.0,Iceland,Family Nurse Practitioner
+2916508598213823,$56K-$109K,82500.0,Greenland,Purchasing Agent
+2017598477069556,$57K-$109K,83000.0,Kazakhstan,Supply Chain Manager
+2622321370377340,$63K-$129K,96000.0,Equatorial Guinea,Social Media Manager
+2818762893904897,$64K-$105K,84500.0,Central African Republic,Customer Service Manager
+2229398729320499,$59K-$119K,89000.0,Solomon Islands,UX/UI Designer
+2656767636912653,$65K-$109K,87000.0,Curacao,Email Marketing Specialist
+2606667967427909,$58K-$117K,87500.0,Eswatini,Civil Engineer
+2046269932367713,$56K-$118K,87000.0,Zambia,Network Analyst
+1364305364283891,$58K-$113K,85500.0,Qatar,Network Engineer
+1995436013511693,$60K-$122K,91000.0,Burkina Faso,Dental Hygienist
+443217784381796,$64K-$130K,97000.0,France,Litigation Attorney
+1176145444831178,$56K-$118K,87000.0,"Hong Kong SAR, China",Mechanical Designer
+1901774038089724,$59K-$124K,91500.0,Brazil,QA Engineer
+1201160030667016,$57K-$118K,87500.0,Nicaragua,Legal Advisor
+543928597169568,$65K-$113K,89000.0,Bosnia and Herzegovina,Social Media Manager
+1522018637890986,$63K-$110K,86500.0,UK,Psychologist
+2622952162296955,$60K-$114K,87000.0,Chile,Systems Engineer
+2311726303845033,$56K-$116K,86000.0,Seychelles,Architect
+338506368421181,$65K-$98K,81500.0,Sierra Leone,Brand Manager
+2718245829033657,$57K-$117K,87000.0,Maldives,Marketing Manager
+1146610732516604,$60K-$101K,80500.0,Republic Of Congo,Mechanical Engineer
+1628292934486581,$57K-$120K,88500.0,Zimbabwe,Purchasing Agent
+723171043133877,$60K-$130K,95000.0,Suriname,UX/UI Designer
+2692840892291067,$62K-$105K,83500.0,Qatar,Legal Assistant
+2610900027467811,$59K-$106K,82500.0,Uganda,Software Architect
+322390577664001,$56K-$105K,80500.0,Mauritania,Email Marketing Specialist
+1031912290957736,$62K-$129K,95500.0,Curacao,Procurement Manager
+1332881322791377,$64K-$114K,89000.0,Gambia,Marketing Specialist
+395253196166585,$59K-$128K,93500.0,Haiti,IT Support Specialist
+161230026511942,$64K-$98K,81000.0,Costa Rica,Software Engineer
+521701516123769,$56K-$119K,87500.0,Afghanistan,Mechanical Engineer
+1650388917845894,$61K-$120K,90500.0,Myanmar,Sales Manager
+2238888202696420,$56K-$117K,86500.0,Central African Republic,Electrical Designer
+1404880356445312,$63K-$128K,95500.0,Gabon,Legal Advisor
+2085021594367034,$61K-$116K,88500.0,Democratic Republic Of Congo,Procurement Specialist
+597051622284044,$56K-$107K,81500.0,Guam,Brand Manager
+1897889866490987,$58K-$106K,82000.0,Netherlands,Marketing Coordinator
+2662901629347449,$60K-$112K,86000.0,Central African Republic,Copywriter
+118698764050766,$62K-$99K,80500.0,Faroe Islands,Mechanical Engineer
+11389387326971,$60K-$117K,88500.0,Somalia,Software Engineer
+489667487602777,$60K-$128K,94000.0,Cameroon,Inventory Analyst
+1349423184681911,$56K-$114K,85000.0,Czech Republic,Tax Consultant
+2241417830595973,$58K-$124K,91000.0,Solomon Islands,Research Analyst
+43398361800795,$63K-$123K,93000.0,Antigua and Barbuda,Database Administrator
+1926528247647629,$58K-$104K,81000.0,Andorra,Database Developer
+1217483326695886,$64K-$104K,84000.0,Gibraltar,Paralegal
+1928723712014355,$64K-$109K,86500.0,Tonga,Process Engineer
+2380984392796015,$61K-$117K,89000.0,Haiti,Graphic Designer
+1370614736291327,$60K-$102K,81000.0,El Salvador,UX/UI Designer
+1035962466538619,$65K-$116K,90500.0,Morocco,Research Analyst
+1115649817553253,$64K-$99K,81500.0,"Macedonia, FYR",Research Scientist
+2309422484185919,$65K-$104K,84500.0,Lao PDR,Substance Abuse Counselor
+295298876117604,$64K-$125K,94500.0,Kenya,Database Developer
+2342102969436325,$62K-$124K,93000.0,Colombia,Digital Marketing Specialist
+1890212327591166,$64K-$123K,93500.0,Kuwait,Public Relations Specialist
+3089872708320804,$55K-$117K,86000.0,Tanzania,Paralegal
+944682973338694,$55K-$126K,90500.0,Spain,Legal Assistant
+2401003010584088,$62K-$125K,93500.0,Comoros,Customer Success Manager
+2470335102459779,$61K-$120K,90500.0,Belize,HR Coordinator
+630481464681167,$59K-$111K,85000.0,"Macedonia, FYR",Account Director
+2850305165720479,$59K-$114K,86500.0,Tuvalu,Landscape Architect
+90206306057788,$60K-$106K,83000.0,Sudan,Nurse Practitioner
+2868689538177074,$62K-$104K,83000.0,Eritrea,Business Development Manager
+926810512029747,$61K-$112K,86500.0,Comoros,Event Planner
+2252366545787995,$60K-$127K,93500.0,Benin,Sales Representative
+1256176335840374,$62K-$117K,89500.0,Belgium,Architect
+929606414503529,$58K-$122K,90000.0,Mali,Business Analyst
+1240445359302047,$58K-$128K,93000.0,Bermuda,Network Technician
+701549408699640,$61K-$126K,93500.0,Faroe Islands,Family Lawyer
+1970829435215308,$58K-$106K,82000.0,Greece,Electrical Engineer
+525281655753384,$64K-$113K,88500.0,Uganda,Pediatrician
+898085188520725,$60K-$106K,83000.0,Angola,Office Manager
+2553132105460380,$63K-$99K,81000.0,Hungary,Physical Therapist
+127305354728754,$56K-$113K,84500.0,Aruba,Supply Chain Manager
+797989903806146,$61K-$111K,86000.0,Peru,Financial Advisor
+406587759130697,$62K-$114K,88000.0,Sao Tome and Principe,Art Director
+1662109777348888,$57K-$106K,81500.0,Senegal,Systems Engineer
+642095410675353,$58K-$129K,93500.0,Gibraltar,Software Engineer
+2142370676486187,$63K-$101K,82000.0,Vanuatu,Litigation Attorney
+602177630315335,$64K-$100K,82000.0,Moldova,UX/UI Designer
+722184685078158,$59K-$111K,85000.0,Gambia,Psychologist
+2660544686876974,$64K-$112K,88000.0,Brunei,Speech Therapist
+2180885658279269,$55K-$127K,91000.0,Guatemala,Marketing Specialist
+481718543769097,$65K-$98K,81500.0,Estonia,Marketing Manager
+2949373683956421,$64K-$97K,80500.0,Grenada,Software Engineer
+1210716694494745,$63K-$129K,96000.0,Morocco,Software Engineer
+545037330114622,$64K-$113K,88500.0,Rwanda,Product Designer
+1709221687473586,$63K-$117K,90000.0,Lithuania,Supply Chain Manager
+2307840348531283,$62K-$125K,93500.0,Slovak Republic,Web Developer
+764557932436704,$65K-$120K,92500.0,Seychelles,Personal Assistant
+1289251819497161,$63K-$99K,81000.0,Lao PDR,Software Engineer
+2350968807784203,$56K-$111K,83500.0,Belgium,Network Administrator
+106369463019998,$62K-$129K,95500.0,Switzerland,Data Analyst
+541530415683024,$57K-$116K,86500.0,Belarus,Software Engineer
+1798329948423315,$59K-$118K,88500.0,Sao Tome and Principe,Sales Representative
+1997446494058173,$57K-$125K,91000.0,Hungary,Systems Engineer
+2673370272297126,$65K-$107K,86000.0,Finland,Financial Analyst
+278877884058183,$65K-$99K,82000.0,Nigeria,IT Support Specialist
+736337123606915,$55K-$129K,92000.0,Antigua and Barbuda,Procurement Manager
+3023389413900036,$55K-$108K,81500.0,Chile,Software Engineer
+287573460673337,$58K-$107K,82500.0,Niger,IT Support Specialist
+19984503035797,$60K-$128K,94000.0,"Venezuela, RB",Digital Marketing Specialist
+994403317969629,$64K-$106K,85000.0,Jordan,Financial Advisor
+1725111147204690,$58K-$118K,88000.0,Jamaica,QA Analyst
+725450117689704,$61K-$101K,81000.0,Djibouti,Accountant
+1840472006295844,$63K-$122K,92500.0,Guatemala,Supply Chain Manager
+2192491116658936,$62K-$123K,92500.0,Bosnia and Herzegovina,Quality Assurance Analyst
+597445570742115,$59K-$111K,85000.0,Greece,Quality Assurance Analyst
+3003167776059134,$59K-$106K,82500.0,Costa Rica,UX/UI Designer
+1108107325901763,$61K-$118K,89500.0,Moldova,Marketing Analyst
+2870546549252394,$56K-$115K,85500.0,Eswatini,Chemical Analyst
+645387537302044,$55K-$109K,82000.0,Egypt,Speech Therapist
+2747469432170847,$64K-$113K,88500.0,Brazil,Environmental Consultant
+133525218101436,$58K-$105K,81500.0,Rwanda,Quality Assurance Analyst
+1091540129392405,$57K-$121K,89000.0,Colombia,Digital Marketing Specialist
+823759790674092,$62K-$101K,81500.0,Lesotho,Brand Ambassador
+1100226011415881,$56K-$124K,90000.0,India,Legal Counsel
+1797325641376271,$60K-$104K,82000.0,Togo,Operations Manager
+2397315394718648,$62K-$103K,82500.0,Guinea,Brand Manager
+1922205585564707,$64K-$119K,91500.0,Mozambique,Data Engineer
+101573916157303,$64K-$116K,90000.0,Georgia,Purchasing Agent
+919330074139881,$63K-$123K,93000.0,Timor-Leste,Project Coordinator
+1557565129858656,$63K-$113K,88000.0,Uruguay,HR Manager
+1141854539601184,$59K-$124K,91500.0,Oman,Sales Representative
+1619443923190995,$59K-$103K,81000.0,Papua New Guinea,IT Manager
+1353461564538280,$63K-$102K,82500.0,Croatia,Procurement Manager
+2032206964124782,$60K-$118K,89000.0,Greece,Veterinarian
+550037765195015,$64K-$102K,83000.0,Jordan,Supply Chain Manager
+2782721503433717,$59K-$109K,84000.0,Lebanon,Environmental Engineer
+2536982365939766,$60K-$119K,89500.0,Norway,UI Developer
+2710049392003632,$64K-$123K,93500.0,Liechtenstein,UX/UI Designer
+1517044507024662,$64K-$102K,83000.0,Nigeria,Systems Administrator
+1301925695297428,$65K-$120K,92500.0,Bosnia and Herzegovina,Marketing Specialist
+796904812848350,$64K-$97K,80500.0,North Korea,Marketing Specialist
+1504475213048553,$56K-$107K,81500.0,Turks and Caicos Islands,Technical Writer
+25492121864742,$64K-$126K,95000.0,"Micronesia, Fed. Sts.",Customer Service Manager
+3049817223846692,$62K-$100K,81000.0,Comoros,Event Planner
+404375413049749,$58K-$122K,90000.0,Kosovo,Procurement Manager
+2473955470099159,$62K-$104K,83000.0,Botswana,Sales Representative
+2118923502565395,$62K-$102K,82000.0,Colombia,Account Manager
+1391201006904798,$65K-$121K,93000.0,Iceland,QA Analyst
+819015008592228,$59K-$114K,86500.0,Equatorial Guinea,Environmental Engineer
+2173122290486,$59K-$105K,82000.0,St. Kitts and Nevis,Customer Service Manager
+2196143094425783,$58K-$118K,88000.0,Maldives,Web Developer
+105037936074034,$65K-$107K,86000.0,Ecuador,Systems Administrator
+2529746274825780,$56K-$112K,84000.0,Bulgaria,Procurement Coordinator
+698171318419051,$56K-$127K,91500.0,"Venezuela, RB",Web Developer
+1391430826820681,$61K-$114K,87500.0,Belize,Aerospace Engineer
+2505213971303748,$56K-$107K,81500.0,Cuba,IT Administrator
+1649353208384029,$65K-$115K,90000.0,Mauritania,Customer Support Specialist
+1423526322179626,$65K-$98K,81500.0,UK,Administrative Assistant
+1078403610645932,$56K-$120K,88000.0,Republic Of Congo,Supply Chain Manager
+2819584556695127,$58K-$116K,87000.0,Jordan,Back-End Developer
+691583771765135,$59K-$123K,91000.0,Monaco,Public Relations Specialist
+2387169112445909,$64K-$103K,83500.0,Namibia,Procurement Manager
+1521531905731978,$63K-$101K,82000.0,Colombia,Customer Success Manager
+1414730705711922,$63K-$105K,84000.0,Cuba,Marketing Specialist
+3038162966114249,$63K-$117K,90000.0,New Zealand,Sales Representative
+1699072923777438,$58K-$113K,85500.0,Sint Maarten (Dutch part),Financial Analyst
+346239188068797,$57K-$120K,88500.0,Australia,Customer Support Specialist
+528968186738005,$61K-$109K,85000.0,Tonga,Front-End Developer
+1221308168352439,$62K-$125K,93500.0,Dominica,Human Resources Manager
+424693999920913,$65K-$115K,90000.0,Ecuador,Electrical Engineer
+2834677018340783,$63K-$128K,95500.0,Tuvalu,Systems Analyst
+2987537344798763,$55K-$121K,88000.0,Tajikistan,Litigation Attorney
+2561134893466423,$65K-$128K,96500.0,Democratic Republic Of Congo,Finance Manager
+515759414812463,$55K-$125K,90000.0,Azerbaijan,Web Designer
+1227023571080475,$64K-$99K,81500.0,Greenland,UI Developer
+2856065253879295,$58K-$112K,85000.0,Malawi,Dental Hygienist
+1896345609786915,$59K-$114K,86500.0,Kyrgyz Republic,Architectural Designer
+2040957541238639,$56K-$115K,85500.0,Kuwait,Nurse Practitioner
+1494011133056635,$56K-$117K,86500.0,El Salvador,Customer Service Manager
+2187016333134884,$59K-$104K,81500.0,Angola,Financial Analyst
+1263318697028635,$63K-$116K,89500.0,Isle of Man,Speech Therapist
+17637322620995,$57K-$107K,82000.0,Russia,Data Analyst
+1263243667540296,$61K-$103K,82000.0,Switzerland,Data Engineer
+1041337046781136,$61K-$130K,95500.0,Qatar,Mechanical Designer
+376071916782646,$55K-$124K,89500.0,Portugal,Project Manager
+3019411510332120,$65K-$111K,88000.0,France,Legal Assistant
+2902293267723834,$56K-$121K,88500.0,Portugal,Occupational Therapist
+1115564708659245,$58K-$128K,93000.0,Vanuatu,Quality Assurance Analyst
+1643603098407476,$61K-$113K,87000.0,Haiti,Financial Advisor
+2625276408916138,$56K-$118K,87000.0,El Salvador,Mechanical Engineer
+1630065504680690,$58K-$128K,93000.0,Lithuania,Data Engineer
+2636814936032944,$56K-$128K,92000.0,Uzbekistan,Customer Support Specialist
+2880630531367897,$64K-$105K,84500.0,Curacao,HR Coordinator
+683360633666748,$62K-$118K,90000.0,Tajikistan,Network Technician
+2286892901678016,$57K-$118K,87500.0,Palau,Legal Assistant
+1785860686978537,$60K-$129K,94500.0,Iraq,Marketing Manager
+180992282446451,$64K-$108K,86000.0,UK,Social Media Manager
+2204826976058936,$60K-$129K,94500.0,British Virgin Islands,Electrical Designer
+333866798461572,$55K-$109K,82000.0,Madagascar,Art Teacher
+590208528082711,$63K-$107K,85000.0,Italy,Marketing Analyst
+1307502863538316,$56K-$123K,89500.0,Paraguay,Art Director
+2402487286617504,$57K-$105K,81000.0,Papua New Guinea,QA Analyst
+2597584253329549,$58K-$125K,91500.0,Isle of Man,Data Scientist
+78558602635986,$64K-$98K,81000.0,Eritrea,UX/UI Designer
+2401059834225792,$56K-$120K,88000.0,El Salvador,Network Engineer
+944305315083006,$65K-$110K,87500.0,France,Quality Assurance Analyst
+914684012194559,$57K-$104K,80500.0,Guinea,Tax Consultant
+465659643464497,$64K-$127K,95500.0,Angola,Software Engineer
+2925970585004795,$60K-$129K,94500.0,Nigeria,Network Engineer
+330355657547739,$59K-$130K,94500.0,Cayman Islands,Data Engineer
+392760471034312,$59K-$112K,85500.0,Paraguay,Business Analyst
+394946821336786,$58K-$124K,91000.0,Republic Of Congo,Pediatrician
+950917053279067,$57K-$118K,87500.0,Netherlands,Architect
+187667308866805,$58K-$114K,86000.0,Lebanon,Personal Assistant
+190798404014818,$56K-$109K,82500.0,Pakistan,Web Designer
+16754769137965,$58K-$108K,83000.0,Costa Rica,Chemical Analyst
+1081678402253816,$59K-$114K,86500.0,Malaysia,Social Media Manager
+1344913041635056,$65K-$98K,81500.0,France,Software Architect
+2912284921275017,$64K-$99K,81500.0,Curacao,Supply Chain Analyst
+947947245527924,$63K-$128K,95500.0,St. Martin (French part),Graphic Designer
+505713735553936,$60K-$102K,81000.0,Tajikistan,Software Engineer
+447410138591378,$59K-$106K,82500.0,El Salvador,Art Teacher
+1615893049431349,$62K-$106K,84000.0,Panama,Financial Analyst
+3045184838825469,$60K-$122K,91000.0,Jamaica,Art Teacher
+2414840055094733,$64K-$116K,90000.0,Finland,Litigation Attorney
+1963966451104578,$63K-$106K,84500.0,Norway,Market Research Analyst
+340976050461310,$65K-$105K,85000.0,South Sudan,Tax Consultant
+3064420457795563,$57K-$118K,87500.0,Cyprus,Family Lawyer
+1062857746044619,$65K-$106K,85500.0,El Salvador,Financial Advisor
+148231967382049,$58K-$103K,80500.0,South Sudan,Psychologist
+3079208650829838,$59K-$112K,85500.0,Namibia,Litigation Attorney
+102034082897326,$55K-$111K,83000.0,Kosovo,Customer Support Specialist
+786476694326389,$65K-$116K,90500.0,Curacao,QA Analyst
+1573958054748606,$63K-$113K,88000.0,New Zealand,Research Analyst
+1588379084815842,$65K-$101K,83000.0,India,Sales Representative
+2612020174010291,$63K-$111K,87000.0,Puerto Rico,Account Executive
+1864996850784532,$59K-$114K,86500.0,Brunei,Registered Nurse
+1228713658577546,$60K-$108K,84000.0,Curacao,Financial Analyst
+2422118320988623,$61K-$124K,92500.0,Costa Rica,UX/UI Designer
+2578487476345119,$58K-$119K,88500.0,Iceland,Account Executive
+969611319441768,$64K-$129K,96500.0,Belgium,Chemical Analyst
+2972373854233073,$56K-$112K,84000.0,Democratic Republic Of Congo,UX Researcher
+2569927492697256,$58K-$115K,86500.0,Niger,Veterinarian
+2448294446717999,$60K-$116K,88000.0,British Virgin Islands,Account Manager
+578358298146361,$55K-$119K,87000.0,St. Kitts and Nevis,SEO Specialist
+2058089793558555,$60K-$105K,82500.0,Morocco,Business Development Manager
+2379597339445196,$56K-$117K,86500.0,"Micronesia, Fed. Sts.",Product Manager
+2315211028269394,$63K-$125K,94000.0,Burkina Faso,Business Analyst
+1105497374507407,$59K-$118K,88500.0,Kosovo,Mechanical Engineer
+1789336225107339,$63K-$102K,82500.0,Somalia,Speech Therapist
+1981430910491835,$63K-$115K,89000.0,New Zealand,Marketing Manager
+2813728189519821,$62K-$119K,90500.0,Vanuatu,IT Administrator
+2479897983670997,$62K-$117K,89500.0,Barbados,Network Engineer
+1459250089624353,$55K-$106K,80500.0,Nicaragua,Project Manager
+2532665674417862,$55K-$111K,83000.0,Oman,Procurement Manager
+1771822339210033,$57K-$126K,91500.0,Comoros,Operations Manager
+724464906641642,$57K-$120K,88500.0,Aruba,HR Coordinator
+257644575885777,$57K-$109K,83000.0,Moldova,Front-End Engineer
+3034532988232654,$64K-$127K,95500.0,Greece,Physical Therapist
+2530634605631377,$64K-$106K,85000.0,Lesotho,Social Media Coordinator
+1976310910073962,$59K-$126K,92500.0,Azerbaijan,HR Generalist
+1925346152335073,$60K-$129K,94500.0,Chile,QA Analyst
+1527448561902831,$61K-$118K,89500.0,Malaysia,IT Manager
+1135037354742117,$60K-$105K,82500.0,Colombia,Account Director
+1359957753078521,$55K-$125K,90000.0,UAE,Procurement Manager
+89484375679775,$62K-$120K,91000.0,"Macedonia, FYR",Copywriter
+1637333170872544,$55K-$127K,91000.0,Guyana,Database Administrator
+2830526738179242,$64K-$116K,90000.0,Ghana,Marketing Director
+1498157730668031,$62K-$119K,90500.0,Denmark,Account Manager
+711459898553984,$63K-$127K,95000.0,Russia,Customer Success Manager
+2393104539885627,$58K-$116K,87000.0,Gambia,Network Technician
+2627185404987723,$58K-$111K,84500.0,Uruguay,Investment Banker
+2692051495385745,$59K-$129K,94000.0,Zambia,Technical Writer
+1911286718143584,$61K-$124K,92500.0,Qatar,Software Architect
+2856944853180221,$55K-$130K,92500.0,Rwanda,Web Developer
+2914586243033963,$57K-$117K,87000.0,"Macao SAR, China",Brand Manager
+1692406866083406,$61K-$113K,87000.0,Honduras,Marketing Coordinator
+293874600791367,$59K-$119K,89000.0,Dominica,IT Manager
+1884600036407122,$61K-$109K,85000.0,Virgin Islands (U.S.),Investment Banker
+2764380218531526,$58K-$114K,86000.0,Nicaragua,Procurement Specialist
+1103737626389675,$56K-$116K,86000.0,Eswatini,SEM Specialist
+2479231166867106,$63K-$108K,85500.0,Sweden,Investment Banker
+2968610120019654,$59K-$111K,85000.0,Andorra,Software Tester
+3037506717494534,$63K-$121K,92000.0,Austria,Paralegal
+2571506735689548,$63K-$102K,82500.0,Hungary,Speech Therapist
+2316755404526062,$56K-$121K,88500.0,Solomon Islands,Customer Service Representative
+2576700225981224,$60K-$103K,81500.0,Eswatini,Registered Nurse
+2083629752537917,$59K-$128K,93500.0,Maldives,Substance Abuse Counselor
+894449319093419,$65K-$102K,83500.0,Mali,Software Engineer
+2880124304570810,$62K-$129K,95500.0,Burundi,Network Administrator
+2788096035562736,$65K-$121K,93000.0,Vanuatu,Financial Analyst
+409647276475659,$56K-$120K,88000.0,Brunei,Sales Representative
+510697582166707,$64K-$119K,91500.0,Mexico,Business Analyst
+813425100450070,$65K-$121K,93000.0,Argentina,Process Engineer
+2045866099164308,$60K-$122K,91000.0,French Polynesia,UX/UI Designer
+200715325758379,$59K-$111K,85000.0,Belize,Electrical Engineer
+249157565406416,$65K-$117K,91000.0,Pakistan,Operations Manager
+455826954371557,$63K-$121K,92000.0,Uruguay,Software Architect
+1621083021900509,$61K-$107K,84000.0,Sint Maarten (Dutch part),Financial Advisor
+2014742310137621,$55K-$129K,92000.0,Sao Tome and Principe,Software Tester
+993985945966117,$65K-$125K,95000.0,Poland,Dental Hygienist
+1282823939964073,$61K-$107K,84000.0,Sierra Leone,Network Security Specialist
+493352656790548,$59K-$107K,83000.0,Lebanon,Social Media Manager
+192046595949966,$61K-$114K,87500.0,Malta,Software Engineer
+871036202148257,$55K-$112K,83500.0,China,Dental Hygienist
+2477197581103625,$60K-$111K,85500.0,Kyrgyz Republic,Family Nurse Practitioner
+2378990584323118,$56K-$126K,91000.0,El Salvador,UX/UI Designer
+2772920393432912,$56K-$106K,81000.0,Greenland,Supply Chain Analyst
+1583065288960216,$55K-$111K,83000.0,Tajikistan,Interior Designer
+861396363651251,$60K-$105K,82500.0,Mali,Legal Assistant
+251725961170380,$59K-$130K,94500.0,Cayman Islands,Systems Engineer
+1962407209279636,$62K-$129K,95500.0,South Sudan,Investment Analyst
+822199200282802,$63K-$101K,82000.0,Cameroon,Substance Abuse Counselor
+650068951441453,$65K-$102K,83500.0,Russia,Marketing Director
+2035114854816088,$61K-$129K,95000.0,Burundi,Legal Advisor
+2634256542524146,$63K-$116K,89500.0,Bhutan,Network Administrator
+950046957627224,$57K-$105K,81000.0,Aruba,SEM Specialist
+352449931299581,$63K-$122K,92500.0,Albania,Legal Advisor
+929176489100591,$55K-$111K,83000.0,Djibouti,Social Media Manager
+2778422404551238,$59K-$108K,83500.0,Argentina,Customer Service Manager
+2811803031153023,$55K-$107K,81000.0,Ireland,Customer Service Manager
+991147490913394,$58K-$120K,89000.0,Finland,Procurement Manager
+725553199947784,$61K-$130K,95500.0,Marshall Islands,Paralegal
+55319044754695,$62K-$112K,87000.0,Mauritania,UX/UI Designer
+3044543164397473,$57K-$104K,80500.0,Seychelles,UX/UI Designer
+1576972001856789,$64K-$124K,94000.0,Myanmar,Sales Representative
+825151692785293,$56K-$113K,84500.0,Armenia,Litigation Attorney
+1747589964548354,$58K-$125K,91500.0,Kosovo,UX/UI Designer
+1347665419397836,$59K-$104K,81500.0,South Sudan,Marketing Coordinator
+2842643552063798,$62K-$130K,96000.0,Bangladesh,Data Analyst
+1858609328890826,$59K-$113K,86000.0,Nauru,Urban Planner
+1156987280386634,$58K-$122K,90000.0,Solomon Islands,Software Tester
+54613904427993,$61K-$104K,82500.0,American Samoa,QA Analyst
+3045508876696240,$55K-$128K,91500.0,Guatemala,Procurement Coordinator
+1733241593280861,$57K-$114K,85500.0,Albania,Network Administrator
+1266848569911949,$61K-$113K,87000.0,St. Martin (French part),Teacher
+2383150010914573,$62K-$100K,81000.0,Jordan,Accountant
+817010962507561,$59K-$123K,91000.0,Portugal,Chemical Engineer
+292300640643484,$61K-$127K,94000.0,Armenia,Software Engineer
+259932849103036,$56K-$122K,89000.0,"Korea, Rep.",Dental Hygienist
+975445975712816,$61K-$113K,87000.0,Serbia,Marketing Analyst
+368090734554288,$58K-$127K,92500.0,Liberia,Teacher
+1394417901791714,$60K-$120K,90000.0,Zambia,Occupational Therapist
+2817175138781171,$58K-$107K,82500.0,Jordan,Content Writer
+2299896877329663,$61K-$115K,88000.0,"Macedonia, FYR",Front-End Engineer
+1025517649476640,$57K-$113K,85000.0,Egypt,Social Media Coordinator
+2334771238714847,$64K-$105K,84500.0,Mauritania,Mechanical Designer
+202998071610502,$58K-$118K,88000.0,Uzbekistan,Network Administrator
+1966686347112472,$62K-$120K,91000.0,Guinea-Bissau,Procurement Coordinator
+1426339843281249,$65K-$126K,95500.0,UAE,Software Tester
+2830621644983513,$59K-$113K,86000.0,Norway,Environmental Consultant
+1241633070721833,$60K-$110K,85000.0,Papua New Guinea,UI Developer
+1231642946392831,$59K-$124K,91500.0,"Venezuela, RB",Personal Assistant
+1751509137358112,$55K-$116K,85500.0,Papua New Guinea,Electrical Engineer
+1364403150924548,$62K-$100K,81000.0,Peru,Social Media Manager
+14652424999130,$57K-$105K,81000.0,Gabon,Urban Planner
+2050608091750635,$57K-$125K,91000.0,Comoros,Investment Banker
+2227853003078128,$63K-$114K,88500.0,Kosovo,Interior Designer
+2170046375698396,$59K-$127K,93000.0,Suriname,Chemical Engineer
+63593805572621,$64K-$129K,96500.0,Italy,Financial Controller
+107163905268634,$55K-$107K,81000.0,Peru,Teacher
+2934033454644295,$64K-$98K,81000.0,Hungary,Accountant
+293727784927886,$64K-$127K,95500.0,Norway,Electrical Engineer
+2859892496867560,$64K-$130K,97000.0,Belize,Business Analyst
+944873178903119,$60K-$113K,86500.0,Benin,Network Administrator
+355540072197479,$61K-$122K,91500.0,Lesotho,Market Research Analyst
+1526540910757523,$59K-$110K,84500.0,Denmark,Network Engineer
+1936228618417364,$60K-$113K,86500.0,American Samoa,Veterinarian
+551501195771183,$65K-$105K,85000.0,Ukraine,Email Marketing Specialist
+2799289502093456,$62K-$125K,93500.0,Germany,Marketing Specialist
+2961169021365301,$61K-$101K,81000.0,Latvia,Legal Advisor
+1400986986297763,$60K-$123K,91500.0,St. Lucia,Graphic Designer
+2530788203957020,$57K-$113K,85000.0,Pakistan,Customer Service Manager
+997639394575266,$63K-$102K,82500.0,San Marino,SEM Specialist
+1782959321149804,$60K-$128K,94000.0,Egypt,IT Support Specialist
+2156890806381592,$63K-$128K,95500.0,Gambia,Systems Engineer
+1420044448991937,$55K-$116K,85500.0,"Hong Kong SAR, China",Urban Planner
+915240526216904,$61K-$123K,92000.0,Tuvalu,Substance Abuse Counselor
+1998750489737436,$59K-$117K,88000.0,Netherlands,Urban Planner
+626044006447695,$60K-$104K,82000.0,Ukraine,Mechanical Engineer
+2848758632747595,$58K-$113K,85500.0,Brunei,IT Manager
+1371096280294706,$61K-$128K,94500.0,Malaysia,UI Developer
